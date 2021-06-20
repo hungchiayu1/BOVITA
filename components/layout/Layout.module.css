@@ -1,0 +1,65 @@
+.box {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.logo {
+  width: 93.58px;
+  height: 30px;
+  margin-right: 98.42px;
+  cursor: pointer;
+}
+
+.logoText {
+  color: #4d2c91;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.input {
+  display: flex;
+  width: 744px;
+  height: 30px;
+  margin-right: 77px;
+}
+
+.inputBox {
+  width: 728px;
+  padding: 0px 0px 0px 10px !important;
+
+  background-color: white;
+  border: 1px solid #eeeeee;
+  border-radius: 20px 0px 0px 20px !important;
+  border-right: none !important;
+}
+
+.inputBox:focus-visible {
+  outline: none;
+}
+
+.button {
+  background-color: white;
+  border: 1px solid #eeeeee;
+  border-radius: 0px 20px 20px 0px !important;
+  border-left: none !important;
+  color: #8e8e8e;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 122px;
+  height: 30px;
+  text-align: center;
+  color: #8e8e8e;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  padding-top: 4px;
+}

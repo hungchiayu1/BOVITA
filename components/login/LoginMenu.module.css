@@ -1,0 +1,41 @@
+.box {
+  margin: 296px 0px 0px 90px;
+  width: 360px;
+  height: 434px;
+  padding-top: 48px;
+  margin-bottom: 294px;
+
+  border: 2px solid #eeeeee;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.textBox {
+  width: 280px;
+  height: 30px;
+  margin: auto;
+  margin-bottom: 47px;
+  padding-left: 6px;
+
+  font-weight: 100;
+  color: #4d2c91;
+  font-size: 20px;
+}
+
+.text {
+  width: 81.58px;
+  height: 16px;
+}
+
+.input {
+  width: 280px;
+  height: 152px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.button {
+  width: 280px;
+  height: 76px;
+  margin: auto;
+}

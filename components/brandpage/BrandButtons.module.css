@@ -1,0 +1,43 @@
+.StyledBox {
+  margin-bottom: 16px;
+  margin-right: 0px;
+  width: 100%;
+  height: 24px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11.11px;
+  line-height: 12px;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+  height: 100%;
+  float: right;
+  color: #616161;
+}
+
+.likeIcon {
+  width: 87px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.iconText {
+  float: right;
+  padding-top: 6px;
+}
+
+.bookmarkIcon {
+  width: 80px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.shareIcon {
+  width: 60px;
+  text-align: center;
+  cursor: pointer;
+}

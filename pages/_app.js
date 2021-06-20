@@ -1,7 +1,18 @@
-import '../styles/globals.css'
+import React from "react";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <React.Fragment>
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0 "
+        />
+      </Head>
+      <Component {...pageProps} />
+    </React.Fragment>
+  );
 }
 
-export default MyApp
+export default MyApp;

@@ -1,0 +1,12 @@
+.title_font {
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27.65px;
+  line-height: 32px;
+}
+
+.welcome_sign_font {
+  text-align: center;
+}

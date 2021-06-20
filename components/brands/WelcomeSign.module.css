@@ -1,0 +1,18 @@
+.h1 {
+  text-align: center;
+  font-weight: 100;
+  width: 100%;
+  height: 56px;
+  padding: 0px 405px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23.04px;
+  line-height: 28px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  height: 128px;
+}

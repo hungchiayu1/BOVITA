@@ -1,0 +1,11 @@
+.DescriptionContainer {
+  width: 552px;
+  float: right;
+  margin-bottom: 32px;
+}
+
+.DescriptionFont {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: justify;
+}

@@ -1,0 +1,38 @@
+.container {
+  height: 100%;
+  background-color: #f4f7ff;
+
+  padding: 216px 0px 246px 0px;
+}
+
+.box {
+  width: 700px;
+  height: 562px;
+  margin: auto;
+  background-color: white;
+
+  padding-top: 48px;
+
+  border: 2px solid #eeeeee;
+  border-radius: 16px;
+}
+
+.text {
+  width: 620px;
+  height: 30px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.register {
+  width: 620px;
+  height: 240px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  width: 620px;
+  height: 116px;
+  margin: auto;
+}

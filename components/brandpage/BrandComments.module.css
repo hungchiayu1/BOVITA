@@ -1,0 +1,45 @@
+.CommentContainer {
+  width: 552px;
+  float: right;
+
+  border-top: 1px solid #d8d8d8;
+  padding-top: 16px;
+}
+.FormBox {
+  margin-top: 12px;
+  display: flex;
+  width: 552px;
+  height: 40px;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  background: #fafafa;
+}
+.CommentBox {
+  width: 552px;
+  height: 40px;
+  border: none;
+  background: none;
+}
+.CommentBox:focus-visible {
+  outline: none;
+}
+
+.CommentFont {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.NameFont {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.IconContainer {
+  border: none;
+  background: none;
+}

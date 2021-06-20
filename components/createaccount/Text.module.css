@@ -1,0 +1,15 @@
+.title {
+  font-weight: 100;
+  color: #4d2c91;
+  font-size: 20px;
+  margin-left: 6px;
+}
+
+.createAccount {
+  float: right;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19.2px;
+  line-height: 24px;
+}

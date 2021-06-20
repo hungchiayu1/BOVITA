@@ -1,0 +1,44 @@
+.card {
+  width: 340px;
+  height: 448px;
+  background-color: white;
+  margin-bottom: 64px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.anchor:active {
+  color: none;
+}
+
+.anchor:hover {
+  text-decoration: none;
+}
+
+.imageHolder {
+  position: relative;
+  width: 340px;
+  height: 242px;
+}
+
+.image {
+  position: absolute;
+  border-radius: 10px 10px 0px 0px !important;
+}
+
+.cardBody {
+  width: 340px;
+  height: 159px;
+  padding: 21px 20px 0px 20px;
+}
+
+.name {
+  margin-bottom: 17px;
+  height: 26px;
+}
+
+.footer {
+  background-color: white !important;
+  border-top: transparent !important;
+  border-radius: 0px 0px 10px 10px !important;
+  padding: 0px 21.05px 7px 21.05px !important;
+}

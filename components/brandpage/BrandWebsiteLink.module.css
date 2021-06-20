@@ -1,0 +1,23 @@
+.Link {
+  margin: auto;
+  background: #7e57c2;
+  border-radius: 4px;
+  width: 744px;
+  height: 36px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.LinkContainer {
+  margin: auto;
+  display: flex;
+  position: sticky;
+
+  vertical-align: bottom;
+  z-index: 2;
+}

@@ -1,0 +1,59 @@
+.slogan {
+  height: 40px;
+  left: 90%;
+  right: 0%;
+  top: 0px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #424242;
+}
+
+.like {
+  position: absolute;
+  left: 8.33%;
+  right: 9.66%;
+  top: 8.33%;
+  bottom: 15px;
+}
+
+.number {
+  position: absolute;
+  width: 66px;
+  height: 16px;
+  right: 41px;
+  bottom: 15px;
+  top: 1px;
+  left: 60.99px;
+
+  /* Paragraph / Small */
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13.33px;
+  line-height: 16px;
+  /* identical to box height, or 120% */
+
+  text-align: right;
+
+  /* Primary / Gray Main */
+
+  color: #616161;
+}
+
+.row {
+  height: 16px !important;
+}
+
+.column {
+  height: 16px !important;
+  padding: 0px !important;
+}
+
+.footerBorder {
+  border-top: 1px solid #b085f5 !important;
+  padding-top: 16px;
+}

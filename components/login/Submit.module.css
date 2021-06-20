@@ -1,0 +1,47 @@
+.submitButton {
+  width: 280px;
+  height: 48px;
+  background-color: #7e57c2;
+  text-align: center;
+  padding: 0px !important;
+  border: 1px solid #7e57c2 !important;
+  border-radius: 4px;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.buttonText {
+  width: 47px;
+  height: 20px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.register {
+  display: flex;
+  width: 181px;
+  height: 12px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11.11px;
+  line-height: 12px;
+}
+
+.not {
+  width: 81px;
+  height: 12px;
+  color: #bdbdbd;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.create {
+  width: 95px;
+  height: 12px;
+  color: black;
+  cursor: pointer;
+}
