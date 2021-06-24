@@ -8,30 +8,26 @@ import classes from "./Submit.module.css";
 
 function Submit({ handleSubmit, formIsValid }) {
   return (
-    <div>
+    <>
       <button
         onClick={(e) => handleSubmit(e, "/brandpage")}
-        className={classes.submitButton}
+        className={`${classes.submitButton} paragraph-semibold`}
         disabled={!formIsValid}
       >
-        <span className={classes.buttonText}>Log In</span>
+        Log In
       </button>
-      <div className={classes.register}>
+      <div className={`${classes.register} pargraph-smaller`}>
         <Link href="/createAccount">
           <a className={classes.not}>Not a member?</a>
         </Link>
         <Link href="/createAccount">
           <a className={classes.create}>
             Create Account
-            <ArrowRight
-              style={{ paddingBottom: "2px" }}
-              size={10}
-              strokeWidth={1}
-            />
+            <ArrowRight size={10} strokeWidth={1} />
           </a>
         </Link>
       </div>
-    </div>
+    </>
   );
 }
 

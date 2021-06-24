@@ -119,10 +119,8 @@ function LoginMenu() {
 
   return (
     <div className={classes.box}>
-      <div className={classes.textBox}>
-        <span className={classes.text}>
-          <Image src="/images/Logo2.svg" alt="Logo" width={94} height={30} />
-        </span>
+      <div className={classes.logo}>
+        <Image src="/images/Logo2.svg" alt="Logo" width={94} height={30} />
       </div>
       <div className={classes.input}>
         <InputBox
@@ -133,7 +131,7 @@ function LoginMenu() {
           handleKeyPress={handleKeyPress}
         />
       </div>
-      <div className={classes.button}>
+      <div className={classes.submitButton}>
         <Submit handleSubmit={handleSubmit} formIsValid={formIsValid} />
       </div>
     </div>

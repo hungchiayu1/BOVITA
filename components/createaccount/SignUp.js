@@ -2,32 +2,23 @@
 // - SignUp button, terms and conditions
 
 import classes from "./SignUp.module.css";
-import { ArrowRight } from "react-feather";
+import { ArrowRight, CheckSquare } from "react-feather";
 import Link from "next/link";
 
 function SignUp() {
   return (
-    <div>
+    <>
       <div className={classes.checkBox}>
-        <i
-          style={{
-            width: "24px",
-            height: "24px",
-            marginRight: "6px",
-            paddingTop: "3px",
-            cursor: "pointer",
-          }}
-          className=" fa fa-check-square fa-lg"
-        />
-        <span className={classes.checkBoxText}>
+        <CheckSquare strokeWidth={1} size={24} />
+        <span className={`${classes.checkBoxText} paragraph-smaller`}>
           Yes, I understand and agree to CommerceHulk&apos;s Terms and Services,
           including the User Agreement and Private Policy.
         </span>
       </div>
-      <button className={classes.signUpButton}>
-        <span className={classes.signUpButtonText}>Sign Up</span>
+      <button className={`${classes.signUpButton} paragraph-semibold`}>
+        Sign Up
       </button>
-      <div className={classes.routing}>
+      <div className={`${classes.routing} paragraph-smaller`}>
         <Link href="/">
           <a className={classes.question}>Already have an account?</a>
         </Link>
@@ -38,7 +29,7 @@ function SignUp() {
           </a>
         </Link>
       </div>
-    </div>
+    </>
   );
 }
 

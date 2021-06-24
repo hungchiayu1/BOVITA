@@ -1,75 +1,29 @@
-.emailAll {
-  width: 280px;
-  height: 64px;
-  margin-bottom: 24px;
+.box {
+  height: 6.4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.emailText {
-  width: 34px;
-  height: 16px;
-  margin-bottom: 8px;
-
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13.33px;
-  line-height: 16px;
+.text {
+  height: 1.6rem;
 }
 
-.emailInput {
-  width: 280px;
-  height: 40px;
+.inputBox {
+  height: 4rem;
   border: 1px solid #bdbdbd;
+  padding-left: 13px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.emailIcon {
-  margin: 12.5px 10px 12.5px 13px;
-}
-
-.emailEnter {
-  border: 0px;
-  height: 100%;
-  width: 240px;
-}
-
-.emailEnter:focus-visible {
-  outline: none;
-}
-
-.passwordAll {
-  width: 280px;
-  height: 64px;
-  margin-bottom: 40px;
-}
-
-.passwordText {
-  width: 62px;
-  height: 16px;
-  margin-bottom: 8px;
-
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13.33px;
-  line-height: 16px;
-}
-
-.passwordInput {
-  width: 280px;
-  height: 40px;
-  border: 1px solid #bdbdbd;
-}
-
-.passwordIcon {
-  margin: 12.5px 10px 12.5px 13px;
-}
-
-.passwordEnter {
-  border: 0px;
-  height: 100%;
-  width: 242px;
-}
-
-.passwordEnter:focus-visible {
-  outline: none;
+.inputField {
+  align-self: stretch;
+  width: 24.2rem;
+  border: none;
 }
 
 .wrong {

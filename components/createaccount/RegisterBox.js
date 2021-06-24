@@ -4,79 +4,57 @@ import classes from "./RegisterBox.module.css";
 
 function RegisterBox({ dispatchForm, formState }) {
   return (
-    <div>
-      <div className={classes.name}>
-        <div className={classes.leftText}>
-          <span className={classes.nameText}>First Name</span>
-          <input
-            type="text"
-            className={
-              formState.firstNameValid === false
-                ? `${classes.incorrect} ${classes.nameInput}`
-                : classes.nameInput
-            }
-            onChange={(e) =>
-              dispatchForm({ type: "FIRST_NAME", val: e.target.value })
-            }
-          />
-        </div>
-        <div className={classes.rightText}>
-          <span className={classes.nameText}>Last Name</span>
-          <input
-            type="text"
-            className={
-              formState.lastNameValid === false
-                ? `${classes.incorrect} ${classes.nameInput}`
-                : classes.nameInput
-            }
-            onChange={(e) =>
-              dispatchForm({ type: "LAST_NAME", val: e.target.value })
-            }
-          />
-        </div>
-      </div>
-      <div className={classes.email}>
-        <span className={classes.emailText}>Email</span>
+    <>
+      <div className={`${classes.firstName} ${classes.inputBox}`}>
+        <span className={`paragraph-smaller`}>First Name</span>
         <input
-          className={
-            formState.emailValid === false
-              ? `${classes.incorrect} ${classes.emailInput}`
-              : classes.emailInput
+          type="text"
+          className={classes.input}
+          onChange={(e) =>
+            dispatchForm({ type: "FIRST_NAME", val: e.target.value })
           }
+        />
+      </div>
+      <div className={`${classes.lastName} ${classes.inputBox}`}>
+        <span className={`paragraph-smaller`}>Last Name</span>
+        <input
+          type="text"
+          className={classes.input}
+          onChange={(e) =>
+            dispatchForm({ type: "LAST_NAME", val: e.target.value })
+          }
+        />
+      </div>
+
+      <div className={`${classes.email} ${classes.inputBox}`}>
+        <span className={`paragraph-smaller`}>Email</span>
+        <input
+          type="email"
+          className={classes.input}
           onChange={(e) => dispatchForm({ type: "EMAIL", val: e.target.value })}
         />
       </div>
-      <div className={classes.password}>
-        <div className={classes.leftText}>
-          <span className={classes.passwordOne}>Password</span>
-          <input
-            type="password"
-            className={
-              formState.passwordValid === false
-                ? `${classes.incorrect} ${classes.nameInput}`
-                : classes.nameInput
-            }
-            onChange={(e) =>
-              dispatchForm({ type: "PASSWORD", val: e.target.value })
-            }
-          />
-        </div>
-        <div className={classes.rightText}>
-          <span className={classes.passwordTwo}>Confirm Password</span>
-          <input
-            type="password"
-            className={
-              formState.confirmPasswordValid === false
-                ? `${classes.incorrect} ${classes.nameInput}`
-                : classes.nameInput
-            }
-            onChange={(e) =>
-              dispatchForm({ type: "CONFIRM_PASSWORD", val: e.target.value })
-            }
-          />
-        </div>
+      <div className={`${classes.password} ${classes.inputBox}`}>
+        <span className={`paragraph-smaller`}>Password</span>
+        <input
+          type="password"
+          className={classes.input}
+          onChange={(e) =>
+            dispatchForm({ type: "PASSWORD", val: e.target.value })
+          }
+        />
       </div>
-    </div>
+      <div className={`${classes.passwordConfirm} ${classes.inputBox}`}>
+        <span className={`paragraph-smaller`}>Confirm Password</span>
+        <input
+          type="password"
+          className={classes.input}
+          onChange={(e) =>
+            dispatchForm({ type: "CONFIRM_PASSWORD", val: e.target.value })
+          }
+        />
+      </div>
+    </>
   );
 }
 

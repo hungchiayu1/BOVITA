@@ -1,0 +1,163 @@
+:root {
+  --primary-font: Inter;
+
+  --color-primary-gray-main: #616161;
+  --color-primary-gray-light: #8e8e8e;
+  --color-primary-gray-dark: #373737;
+
+  --color-secondary-purple-main: #7e57c2;
+  --color-secondary-purple-light: #b085f5;
+  --color-secondary-purple-dark: #4d2c91;
+
+  --color-gray-900: #212121;
+  --color-gray-800: #424242;
+  --color-gray-700: #616161;
+  --color-gray-600: #757575;
+  --color-gray-500: #9e9e9e;
+  --color-gray-400: #bdbdbd;
+  --color-gray-300: #e0e0e0;
+  --color-gray-200: #eeeeee;
+  --color-gray-100: #f5f5f5;
+  --color-gray-50: #fafafa;
+  --color-gray-gradient: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    rgba(248, 248, 248, 0.71875) 34.38%,
+    #e8e8e8 100%
+  );
+
+  --color-red: #db524e;
+
+  --bp-largest: 75em; /*1200*/
+  --bp-large: 68.75em; /*1100*/
+  --bp-medium: 56.25rem; /*900*/
+  --bp-small: 37.5em; /*600*/
+  --bp-smallest: 31.25em; /*500*/
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+@media (max-width: 68.75em) {
+  html {
+    font-size: 50% !important;
+  }
+}
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 80% !important;
+  }
+}
+
+@media (max-width: 31.25em) {
+  html {
+    font-size: 80% !important;
+  }
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6;
+  background-color: #e5e5e5;
+}
+
+.paragraph-regular {
+  font-size: 1.92rem;
+  line-height: 2.4rem;
+}
+
+.paragraph-large {
+  font-size: 1.92rem;
+  line-height: 2.4rem;
+}
+
+.paragraph-small {
+  font-size: 1.333rem;
+  line-height: 1.6rem;
+}
+
+.paragraph-smaller {
+  font-size: 1.111rem;
+  line-height: 1.2rem;
+}
+
+.paragraph-semibold {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.heading-6-regular {
+  font-size: 1.92rem;
+  line-height: 2.4rem;
+}
+
+.heading-6-semibold {
+  font-weight: 600;
+  font-size: 1.92rem;
+  line-height: 2.4rem;
+}
+
+.heading-5-regular {
+  font-size: 2.304rem;
+  line-height: 2.8rem;
+}
+
+.heading-5-semibold {
+  font-weight: 600;
+  font-size: 2.304rem;
+  line-height: 2.8rem;
+}
+
+.heading-4-regular {
+  font-size: 2.765rem;
+  line-height: 3.2rem;
+}
+
+.heading-4-semibold {
+  font-weight: 600;
+  font-size: 2.765rem;
+  line-height: 3.2rem;
+}
+
+.heading-3-regular {
+  font-size: 3.318rem;
+  line-height: 4rem;
+}
+
+.heading-3-semibold {
+  font-weight: 600;
+  font-size: 3.318rem;
+  line-height: 4rem;
+}
+
+.heading-2-regular {
+  font-size: 3.981rem;
+  line-height: 4.8rem;
+}
+
+.heading-2-semibold {
+  font-weight: 600;
+  font-size: 3.981rem;
+  line-height: 4.8rem;
+}
+
+.heading-1-regular {
+  font-size: 4.778rem;
+  line-height: 6rem;
+}
+
+.heading-1-semibold {
+  font-weight: 600;
+  font-size: 4.778rem;
+  line-height: 6rem;
+}

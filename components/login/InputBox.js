@@ -12,30 +12,30 @@ function InputBox({
 }) {
   return (
     <>
-      <div className={classes.emailAll}>
-        <div className={classes.emailText}>Email</div>
-        <div className={classes.emailInput}>
-          <Mail className={classes.emailIcon} size={15} strokeWidth={1} />
+      <div className={classes.box}>
+        <div className={`${classes.text} paragraph-small`}>Email</div>
+        <div className={classes.inputBox}>
+          <Mail size={15} strokeWidth={1} />
           <input
             onChange={(e) =>
               setEmail({ type: "USER_INPUT", val: e.target.value })
             }
-            className={classes.emailEnter}
+            className={classes.inputField}
             onKeyPress={(e) => {
               handleKeyPress(e, "/brandpage");
             }}
           />
         </div>
       </div>
-      <div className={classes.passwordAll}>
-        <div className={classes.passwordText}>Password</div>
-        <div className={classes.passwordInput}>
-          <Lock className={classes.passwordIcon} size={13} strokeWidth={1} />
+      <div className={classes.box}>
+        <div className={`${classes.text} paragraph-small`}>Password</div>
+        <div className={classes.inputBox}>
+          <Lock size={15} strokeWidth={1} />
           <input
             onChange={(e) =>
               setPassword({ type: "USER_INPUT", val: e.target.value })
             }
-            className={classes.passwordEnter}
+            className={classes.inputField}
             type="password"
             onKeyPress={(e) => {
               handleKeyPress(e, "/brandpage");
