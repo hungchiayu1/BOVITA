@@ -6,10 +6,8 @@ import { Tag } from "react-feather";
 function BrandPromotion() {
   return (
     <div className={classes.container}>
-      <span className={classes.tag}>
-        <Tag size={18} />
-      </span>
-      <span className={classes.promotion}>Promotion</span>
+      <Tag size={18} />
+      <span className={`paragraph-small ${classes.icon}`}>Promotion</span>
     </div>
   );
 }

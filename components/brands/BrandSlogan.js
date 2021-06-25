@@ -1,6 +1,6 @@
 // Displays brand description
 
-import classes from "./BrandDetails.module.css";
+import classes from "./BrandSlogan.module.css";
 
 function BrandSlogan({ slogan }) {
   let newSlogan;
@@ -8,7 +8,11 @@ function BrandSlogan({ slogan }) {
     newSlogan = slogan.slice(0, 87);
     newSlogan += "...";
   }
-  return <div className={classes.slogan}>{newSlogan || slogan}</div>;
+  return (
+    <div className={`${classes.slogan} paragraph-small`}>
+      {newSlogan || slogan}
+    </div>
+  );
 }
 
 export default BrandSlogan;

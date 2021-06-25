@@ -1,18 +1,15 @@
-.h1 {
-  text-align: center;
-  font-weight: 100;
-  width: 100%;
-  height: 56px;
-  padding: 0px 405px;
+.container {
+  height: 12.8rem;
+  background-color: var(--color-gray-100);
 
-  font-style: normal;
-  font-weight: normal;
-  font-size: 23.04px;
-  line-height: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.main {
-  display: flex;
-  align-items: center;
-  height: 128px;
+@media (max-width: 56.25em) {
+  .container {
+    flex-direction: row;
+  }
 }

@@ -19,12 +19,10 @@ function BrandPage({ brands, likesRecord }) {
         <title>Bovita</title>
         <meta name="description" content="List of brands" />
       </Head>
-      <Layout />
       <div className={classes.main}>
-        <WelcomeSign message="Melissa Yung" />
-        <div className={classes.body}>
-          <BrandList brands={brands} likesRecord={likesRecord} />
-        </div>
+        <Layout />
+        <WelcomeSign name="Melissa Yung" />
+        <BrandList brands={brands} likesRecord={likesRecord} />
       </div>
     </SiteFilterProvider>
   );

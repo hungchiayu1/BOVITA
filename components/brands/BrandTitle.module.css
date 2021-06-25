@@ -1,14 +1,11 @@
 .title {
-  display: flex;
+  height: 2.4rem;
   color: black;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 19.2px;
-  line-height: 24px;
+  display: flex;
+  align-items: center;
 }
 
-.brandName {
-  padding-top: 6px;
-  margin-left: 14px;
-  height: 24px;
+.logo {
+  display: block;
+  margin-right: 1.4rem;
 }

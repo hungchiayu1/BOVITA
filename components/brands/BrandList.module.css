@@ -1,0 +1,9 @@
+.container {
+  background-color: var(--color-gray-100);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 34rem);
+  grid-column-gap: 4.4rem;
+  grid-row-gap: 6.4rem;
+  justify-content: center;
+}

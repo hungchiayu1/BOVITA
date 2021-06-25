@@ -26,6 +26,10 @@
   border: none;
 }
 
+.inputField:focus-visible {
+  outline: none;
+}
+
 .wrong {
   display: none;
 }

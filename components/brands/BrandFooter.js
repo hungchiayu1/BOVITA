@@ -1,7 +1,6 @@
 // Footer for each card item displaying each brand
 import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import classes from "./BrandDetails.module.css";
+import classes from "./BrandFooter.module.css";
 import { priceHandler } from "../../lib/brand-helper";
 
 // TODO: add functionality for if data fails to update
@@ -41,23 +40,19 @@ function BrandFooter({ brand, likesRecord }) {
   }
 
   return (
-    <Container className={classes.footerBorder}>
-      <Row>
-        <Col className={classes.column}>{priceHandler(brand.price)}</Col>
-        <Col onClick={toggleLikeHandler} className={classes.column}>
-          <i
-            style={{ cursor: "pointer", float: "right" }}
-            className={
-              likesList.find((rec) => rec === brand.id)
-                ? "fa fa-thumbs-up"
-                : "fa fa-thumbs-o-up"
-            }
-          />
-          &nbsp;&nbsp;
-          <i className={classes.number}>{likeNumber} likes</i>
-        </Col>
-      </Row>
-    </Container>
+    <div className={classes.container}>
+      <div className={classes.dollarSigns}>{priceHandler(brand.price)}</div>
+      <div className={`paragraph-small`}>{likeNumber} likes</div>
+      <i
+        onClick={toggleLikeHandler}
+        style={{ cursor: "pointer" }}
+        className={
+          likesList.find((rec) => rec === brand.id)
+            ? `fa fa-thumbs-up ${classes.icon}`
+            : `fa fa-thumbs-o-up ${classes.icon}`
+        }
+      />
+    </div>
   );
 }
 

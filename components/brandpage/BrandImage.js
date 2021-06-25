@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Carousel from "react-bootstrap/Carousel";
+
 import classes from "./BrandImage.module.css";
 import { useState } from "react";
 
@@ -11,7 +11,7 @@ const Images = ({ imageList }) => {
   };
   return (
     <div className={classes.ImageContainer}>
-      <Carousel fade activeIndex={index} onSelect={handleSelect}>
+      {/* <Carousel fade activeIndex={index} onSelect={handleSelect}>
         {imageList.map(function (image, index) {
           return (
             <Carousel.Item key={index}>
@@ -19,7 +19,7 @@ const Images = ({ imageList }) => {
             </Carousel.Item>
           );
         })}
-      </Carousel>
+      </Carousel> */}
     </div>
   );
 };

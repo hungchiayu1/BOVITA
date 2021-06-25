@@ -46,17 +46,6 @@
   }
 }
 
-@media (max-width: 37.5em) {
-  html {
-    font-size: 80% !important;
-  }
-}
-
-@media (max-width: 31.25em) {
-  html {
-    font-size: 80% !important;
-  }
-}
 html {
   font-size: 62.5%;
   box-sizing: border-box;

@@ -1,16 +1,13 @@
 // Displays welcome sign for the page
-import Container from "react-bootstrap/Container";
 
 import classes from "./WelcomeSign.module.css";
 
-function WelcomeSign(props) {
+function WelcomeSign({ name }) {
   return (
-    <Container className={classes.main}>
-      <span className={classes.h1}>
-        Welcome {props.message} <br></br>
-        Brands tailored just for you.
-      </span>
-    </Container>
+    <div className={`${classes.container} heading-5-regular`}>
+      <p>Welcome, {name}.&nbsp;</p>
+      <p>Brands tailored just for you.</p>
+    </div>
   );
 }
 export default WelcomeSign;

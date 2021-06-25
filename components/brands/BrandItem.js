@@ -18,30 +18,23 @@ function BrandItem({ brand, likesRecord }) {
     <div className={classes.card}>
       <Link href={`/brandpage/${brand.id}`}>
         <a className={classes.anchor}>
-          <div className={classes.imageHolder}>
+          <div className={classes.image}>
             <Image
-              className={classes.image}
               src={brand.images[0]}
               alt="Image of brand"
               width={340}
               height={242}
             />
-            <BrandCollections />
-            {brand.promotion ? <BrandPromotion /> : null}
           </div>
+          <BrandCollections />
+          {brand.promotion ? <BrandPromotion /> : null}
           <div className={classes.cardBody}>
-            <div className={classes.name}>
-              <BrandTitle name={brand.name} logo={brand.logo} />
-            </div>
-            <>
-              <BrandSlogan slogan={brand.slogan} />
-            </>
+            <BrandTitle name={brand.name} logo={brand.logo} />
+            <BrandSlogan slogan={brand.slogan} />
           </div>
         </a>
       </Link>
-      <div className={classes.footer}>
-        <BrandFooter brand={brand} likesRecord={likesRecord} />
-      </div>
+      <BrandFooter brand={brand} likesRecord={likesRecord} />
     </div>
   );
 }

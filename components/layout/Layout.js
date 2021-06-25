@@ -7,7 +7,6 @@ import Image from "next/image";
 
 import { Settings, User, Bookmark, Search } from "react-feather";
 import classes from "./Layout.module.css";
-import Container from "react-bootstrap/Container";
 import { SiteFilter } from "../../contexts/filter-context";
 
 function NewLayout() {
@@ -15,14 +14,12 @@ function NewLayout() {
   const { setSearchQuery } = useContext(SiteFilter);
 
   return (
-    <Container className={classes.box}>
-      <div className={classes.logo}>
-        <Link href="/brandpage" className={classes.logoText}>
-          <a>
-            <Image src="/images/Logo2.svg" alt="Logo" width={94} height={30} />
-          </a>
-        </Link>
-      </div>
+    <div className={classes.box}>
+      <Link href="/brandpage">
+        <a>
+          <Image src="/images/Logo2.svg" alt="Logo" width={94} height={30} />
+        </a>
+      </Link>
       <div className={classes.input}>
         <input
           type="text"
@@ -30,25 +27,15 @@ function NewLayout() {
           onChange={(e) => setSearchQuery(e.target.value)}
         />
         <button className={classes.button}>
-          <Search
-            strokeWidth={1}
-            size={13.52}
-            style={{ paddingBottom: "3px" }}
-          />
+          <Search strokeWidth={1} size={15} />
         </button>
       </div>
       <div className={classes.icons}>
-        <div className={classes.icon}>
-          <Settings strokeWidth={1} size={16} />
-        </div>
-        <div className={classes.icon}>
-          <User strokeWidth={1} size={16} />
-        </div>
-        <div className={classes.icon}>
-          <Bookmark strokeWidth={1} size={16} />
-        </div>
+        <Settings strokeWidth={1} size={16} />
+        <User strokeWidth={1} size={16} />
+        <Bookmark strokeWidth={1} size={16} />
       </div>
-    </Container>
+    </div>
   );
 }
 

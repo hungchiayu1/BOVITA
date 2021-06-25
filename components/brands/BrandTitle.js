@@ -4,10 +4,12 @@ import classes from "./BrandTitle.module.css";
 function BrandTitle(props) {
   return (
     <div className={classes.title}>
-      <span>
-        <Image src={props.logo} alt="logo" height={35} width={30} />
+      <div className={classes.logo}>
+        <Image src={props.logo} alt="logo" height={24} width={30} />
+      </div>
+      <span className={`heading-6-semibold ${classes.brandName}`}>
+        {props.name}
       </span>
-      <span className={classes.brandName}>{props.name}</span>
     </div>
   );
 }

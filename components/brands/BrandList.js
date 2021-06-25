@@ -1,7 +1,8 @@
 // Consists of the list of all brands displayed in the site
 
 import { useContext } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+
+import classes from "./BrandList.module.css";
 
 // Consists of one component <BrandItem />
 import BrandItem from "./BrandItem";
@@ -13,21 +14,17 @@ function BrandList({ brands, likesRecord }) {
   const { searchQuery } = useContext(SiteFilter);
 
   return (
-    <Container>
-      <Row>
-        {brands
-          .filter((brand) => {
-            return brand.name.toLowerCase().includes(searchQuery);
-          })
-          .map((brand) => {
-            return (
-              <Col md={4} key={brand.id}>
-                <BrandItem brand={brand} likesRecord={likesRecord} />
-              </Col>
-            );
-          })}
-      </Row>
-    </Container>
+    <div className={classes.container}>
+      {brands
+        .filter((brand) => {
+          return brand.name.toLowerCase().includes(searchQuery);
+        })
+        .map((brand) => {
+          return (
+            <BrandItem key={brand.id} brand={brand} likesRecord={likesRecord} />
+          );
+        })}
+    </div>
   );
 }
 

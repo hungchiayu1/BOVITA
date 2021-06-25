@@ -1,0 +1,22 @@
+.container {
+  width: 29.8rem;
+  border-top: 1px solid var(--color-secondary-purple-light);
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dollarSigns {
+  margin-right: auto;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-left: 0.7rem;
+}

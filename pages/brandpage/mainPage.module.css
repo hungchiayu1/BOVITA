@@ -1,7 +1,6 @@
 .main {
-  background-color: #f5f5f5;
-}
+  min-height: 100vh;
 
-.body {
-  background-color: #f5f5f5;
+  display: grid;
+  grid-template-rows: minmax(min-content, 8rem) minmax(min-content, 12.8rem) 1fr;
 }
