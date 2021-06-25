@@ -6,16 +6,16 @@ import { useState } from "react";
 //This component takes in an array of objects of {name:'',comment''}
 const CommentsDisplay = ({ commentObject }) => {
   return (
-    <>
+    <div className={classes.comment}>
       {commentObject.map(function (Comment, index) {
         return (
           <p key={index}>
-            <span className={classes.NameFont}>{Comment.name}</span>:
-            <span className={classes.CommentFont}>{Comment.comment}</span>
+            <span className={`paragraph-semibold`}>{Comment.name}: </span>
+            <span className={`paragraph-regular`}>{Comment.comment}</span>
           </p>
         );
       })}
-    </>
+    </div>
   );
 };
 
@@ -29,13 +29,13 @@ const CommentInput = (props) => {
     <div className={classes.FormBox}>
       <input
         type="text"
-        placeholder="Enter a Comment..."
+        placeholder="   Enter a Comment..."
         className={classes.CommentBox}
         onChange={ChangeCommentValue}
         value={CommentValue}
       />
       <button className={classes.IconContainer} onClick={Submit}>
-        <CornerDownLeft className={classes.EnterIcon} />
+        <CornerDownLeft />
       </button>
     </div>
   );

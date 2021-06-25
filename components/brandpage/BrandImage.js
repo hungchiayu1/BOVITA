@@ -20,6 +20,17 @@ const Images = ({ imageList }) => {
           );
         })}
       </Carousel> */}
+      {imageList.map((image, ind) => {
+        return (
+          <Image
+            key={ind}
+            width={744}
+            height={557}
+            src={image}
+            alt="First Slide"
+          />
+        );
+      })}
     </div>
   );
 };

@@ -1,52 +1,32 @@
 .TagRegion {
-  float: left;
-  width: 192px;
+  grid-row: 2/-1;
+  grid-column: 1/2;
+  color: var(--color-primary-gray-main);
 
-  color: #616161;
+  display: flex;
+  flex-direction: column;
+}
 
-  font-size: 11.11px;
-  line-height: 12px;
+.TagRegion > *:not(.TagBox) {
+  margin-bottom: 1.6rem;
+  display: flex;
+  align-items: center;
 }
 
 .TagBox {
-  color: #616161;
+  color: inherit;
   background-color: white;
-  border: 1px solid #8e8e8e;
+  border: 1px solid var(--color-primary-gray-light);
+  align-self: flex-start;
 
-  margin: 0px 0px 8px 0px !important;
-  padding: 4px 6px 4px 6px !important;
-
-  font-size: 11.11px;
-  line-height: 12px;
+  margin-bottom: 0.8rem;
+  padding: 0.4rem 0.6rem;
 }
 
 .dollar {
-  width: 120px;
-  height: 16px;
-
-  margin: 8px 0px 16px 0px;
+  margin-top: 0.8rem;
 }
 
-.dollarText {
-  margin-left: 4px;
-  font-size: 11.11px;
-  line-height: 12px;
-  vertical-align: middle;
-}
-
-.shipping {
-  width: 135px;
-  height: 16px;
-
-  margin-bottom: 16px;
-}
-
-.shippingText {
-  width: 115px;
-  margin-left: 5px;
-}
-
-.promotionText {
-  width: 102px;
-  margin-left: 5px;
+.TagRegion > * > span {
+  margin-left: 0.6rem;
 }

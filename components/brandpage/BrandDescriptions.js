@@ -1,14 +1,11 @@
-import classes from './BrandDescription.module.css';
+import classes from "./BrandDescription.module.css";
 
-const Descriptions = ({descriptions})=>
-{
-    return (
-   
-   <div className = {classes.DescriptionContainer}>
-        <p className = {classes.DescriptionFont}>{descriptions}</p>
-    </div>);
- 
-}
+const Descriptions = ({ descriptions }) => {
+  return (
+    <div className={`${classes.DescriptionContainer} paragraph-regular`}>
+      {descriptions}
+    </div>
+  );
+};
 
-
-export default Descriptions
+export default Descriptions;

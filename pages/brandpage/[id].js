@@ -1,24 +1,27 @@
 import Head from "next/head";
+
+import classes from "./mainPage.module.css";
+
 import Brand from "../../components/brandpage/Brand";
 import Layout from "../../components/layout/Layout";
+import WelcomeSign from "../../components/layout/WelcomeSign";
 import {
   connectDatabase,
   getAllDocuments,
   getDocument,
 } from "../../lib/db-utils";
 
-import "font-awesome/css/font-awesome.min.css";
-
 const IndividualBrandPage = ({ brand, likesRecord }) => {
   return (
-    <>
+    <div className={classes.main}>
       <Head>
         <title>{brand.name}</title>
         <meta name="description" content={brand.slogan} />
       </Head>
       <Layout />
+      <WelcomeSign header={brand.name} sub={brand.slogan} />
       <Brand brand={brand} likesRecord={likesRecord} />
-    </>
+    </div>
   );
 };
 

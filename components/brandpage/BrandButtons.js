@@ -35,13 +35,13 @@ const LikeButton = ({ brand, likesRecord }) => {
   }
 
   return (
-    <div className={classes.likeIcon} onClick={toggleLikeHandler}>
+    <div className={classes.iconContainer} onClick={toggleLikeHandler}>
       {likesRecord.find((rec) => rec === brand.id) ? (
-        <ThumbsUp className={classes.icon} strokeWidth={1} size={24} />
+        <ThumbsUp strokeWidth={1} size={24} />
       ) : (
-        <ThumbsDown className={classes.icon} strokeWidth={1} size={24} />
+        <ThumbsDown strokeWidth={1} size={24} />
       )}
-      <span className={classes.iconText}>{likeNumber} likes</span>
+      {likeNumber} likes
     </div>
   );
 };
@@ -53,14 +53,9 @@ const BookmarkButton = () => {
   };
 
   return (
-    <div className={classes.bookmarkIcon}>
-      <Bookmark
-        onClick={clickBookmark}
-        strokeWidth={1}
-        size={24}
-        className={classes.icon}
-      />
-      <span className={classes.iconText}>Bookmark</span>
+    <div className={classes.iconContainer}>
+      <Bookmark onClick={clickBookmark} strokeWidth={1} size={24} />
+      Bookmark
     </div>
   );
 };
@@ -71,14 +66,9 @@ const ShareButton = () => {
     console.log("Shared!");
   };
   return (
-    <div className={classes.shareIcon}>
-      <Share
-        onClick={clickShare}
-        strokeWidth={1}
-        size={24}
-        className={classes.icon}
-      />
-      <span className={classes.iconText}>Share</span>
+    <div className={classes.iconContainer}>
+      <Share onClick={clickShare} strokeWidth={1} size={24} />
+      Share
     </div>
   );
 };
@@ -87,12 +77,10 @@ const ShareButton = () => {
 // This should take in a user object that tells whether user has liked or bookmarked this brand
 const Buttons = ({ brand, likesRecord }) => {
   return (
-    <div className={classes.StyledBox}>
-      <span className={classes.iconContainer}>
-        <LikeButton brand={brand} likesRecord={likesRecord} />
-        <BookmarkButton />
-        <ShareButton />
-      </span>
+    <div className={`${classes.StyledBox} paragraph-small`}>
+      <LikeButton brand={brand} likesRecord={likesRecord} />
+      <BookmarkButton />
+      <ShareButton />
     </div>
   );
 };

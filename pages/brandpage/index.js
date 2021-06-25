@@ -9,7 +9,7 @@ import classes from "./mainPage.module.css";
 
 // Consists of 3 components
 import Layout from "../../components/layout/Layout";
-import WelcomeSign from "../../components/brands/WelcomeSign";
+import WelcomeSign from "../../components/layout/WelcomeSign";
 import BrandList from "../../components/brands/BrandList";
 
 function BrandPage({ brands, likesRecord }) {
@@ -21,7 +21,10 @@ function BrandPage({ brands, likesRecord }) {
       </Head>
       <div className={classes.main}>
         <Layout />
-        <WelcomeSign name="Melissa Yung" />
+        <WelcomeSign
+          header="Welcome, Melissa Yung "
+          sub="Brands tailored just for you."
+        />
         <BrandList brands={brands} likesRecord={likesRecord} />
       </div>
     </SiteFilterProvider>

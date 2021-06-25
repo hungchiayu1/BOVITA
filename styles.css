@@ -56,12 +56,12 @@ body {
   font-weight: normal;
   font-style: normal;
   line-height: 1.6;
-  background-color: #e5e5e5;
+  background-color: #fff;
 }
 
 .paragraph-regular {
-  font-size: 1.92rem;
-  line-height: 2.4rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
 }
 
 .paragraph-large {

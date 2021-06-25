@@ -5,17 +5,16 @@ import { priceHandler } from "../../lib/brand-helper";
 //BrandTag component
 const BrandTags = ({ brand }) => {
   return (
-    <div className={classes.TagRegion}>
+    <div className={`${classes.TagRegion} paragraph-smaller`}>
       {brand.taglist.map(function (tag_name, index) {
         return (
-          <div key={index}>
-            <button
-              className={classes.TagBox}
-              onClick={() => console.log(tag_name)}
-            >
-              {tag_name}
-            </button>
-          </div>
+          <button
+            key={index}
+            className={`${classes.TagBox} paragraph-smaller`}
+            onClick={() => console.log(tag_name)}
+          >
+            {tag_name}
+          </button>
         );
       })}
       <Dollar brandPrice={brand.price} />
@@ -26,16 +25,16 @@ const BrandTags = ({ brand }) => {
 };
 
 const Dollar = ({ brandPrice }) => {
-  let text = <span className={classes.dollarText}>Average</span>;
+  let text = "Average";
   if (brandPrice === 3) {
-    text = <span className={classes.dollarText}>Expensive</span>;
+    text = "Expensive";
   } else if (brandPrice === 1) {
-    text = <span className={classes.dollarText}>Cheap</span>;
+    text = "Cheap";
   }
   return (
     <div className={classes.dollar}>
       {priceHandler(brandPrice)}
-      {text}
+      <span>{text}</span>
     </div>
   );
 };
@@ -43,9 +42,9 @@ const Dollar = ({ brandPrice }) => {
 //International shipping display component
 const Shipping = () => {
   return (
-    <div className={classes.shipping}>
+    <div>
       <Globe strokeWidth={1} size={16} />
-      <span className={classes.shippingText}>Internation shipping</span>
+      <span>Internation shipping</span>
     </div>
   );
 };
@@ -55,9 +54,9 @@ export default BrandTags;
 const Promotion = ({ brandPromotion }) => {
   if (brandPromotion) {
     return (
-      <div className={classes.promotion}>
+      <div>
         <Tag size={18} strokeWidth={1} />
-        <span className={classes.promotionText}>Ongoing Promotion</span>
+        <span>Ongoing Promotion</span>
       </div>
     );
   } else {
