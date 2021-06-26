@@ -44,7 +44,7 @@ export async function getStaticProps() {
       brands: brands,
       likesRecord: users[0].likes,
     },
-    revalidate: 15000,
+    revalidate: 15,
   };
 }
 
