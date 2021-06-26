@@ -20,7 +20,7 @@ function BrandFooter({ brand, likesRecord }) {
 
     if (likesList.includes(brand.id)) {
       setlikeNumber(likeNumber - 1);
-      likesList.pop();
+      likesList.splice(likesList.indexOf(brand.id), 1);
     } else {
       setlikeNumber(likeNumber + 1);
       likesList.push(brand.id);

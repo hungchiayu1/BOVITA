@@ -1,6 +1,5 @@
 // Main Page when user first logs in
 import Head from "next/head";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 import { SiteFilterProvider } from "../../contexts/filter-context";
 import { connectDatabase, getAllDocuments } from "../../lib/db-utils";
