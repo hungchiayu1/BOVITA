@@ -7,7 +7,7 @@ function BrandPromotion() {
   return (
     <div className={classes.container}>
       <Tag size={18} />
-      <span className={`paragraph-small ${classes.icon}`}>Promotion</span>
+      <span className={`paragraph-smaller ${classes.icon}`}>Promotion</span>
     </div>
   );
 }
