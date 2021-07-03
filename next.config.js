@@ -26,3 +26,11 @@ module.exports = {
     domains: ["img.icons8.com"],
   },
 };
+
+module.exports = {
+  images: {
+    loader: "imgix",
+    path: "https://bovitabrandimage.s3.amazonaws.com/",
+    domains: ["bovitabrandimage.s3.amazonaws.com"],
+  },
+};
